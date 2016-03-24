@@ -1,0 +1,16 @@
+{
+  "name": "node-user-authentication",
+  "version": "1.0.0",
+  "description": "An assignment on user authentication using node and mongodb",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "node",
+    "mongodb",
+    "user-authentication"
+  ],
+  "author": "Alex Tsiras",
+  "license": "ISC"
+}
