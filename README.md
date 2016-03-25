@@ -19,8 +19,8 @@ In this task you will implement a new function named verifyAdmin() in verify.js 
 
 Furthermore, when the user's token is checked in verifyOrdinaryUser() function, it will load a new property named decoded to the request object. This will be available to you if the verifyAdmin() follows verifyOrdinaryUser() in the middleware order in Express. From this req object, you can obtain the admin flag of the user's information by using the following expression:
 ```
-     req.decoded._doc.admin
-     ```
+req.decoded._doc.admin
+```
 You can use this to decide if the user is an administrator. The verifyAdmin() function will return Next(); if the user is an admin, otherwise it will `return Next(err)`;
 
 ### Task2
