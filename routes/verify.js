@@ -34,3 +34,16 @@ exports.verifyOrdinaryUser = function (req, res, next) {
         return next(err);
     }
 };
+
+exports.verifyAdmin = function(req, res, next) {
+  // Check if decoded is defined
+  if (!req.decoded._doc.admin) {
+    // if there is no token
+    // return an error
+    var err = new Error('You are not authorized to perform such actions!');
+    err.status = 401;
+    return next(err);
+  } else {
+    return next();
+  }
+};
